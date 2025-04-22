@@ -1,5 +1,5 @@
 trigger OpportunityTrigger on Opportunity (After Insert,After Update,After Delete,After Undelete) {
-	OpportunityHandler.maxOpportunityOnAccount(Trigger.new,Trigger.oldMap);
+	//OpportunityHandler.maxOpportunityOnAccount(Trigger.new,Trigger.oldMap);
     if(Trigger.isAfter && Trigger.isUpdate){
         OpportunityHandler.maxOpportunityOnAccount(Trigger.new,Trigger.oldMap);
     }
