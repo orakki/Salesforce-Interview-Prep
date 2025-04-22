@@ -5,9 +5,17 @@
     "**/.sfdx": true
   },
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
-  }
+    "scminput": false,
+    "apex": true
+  },
+  "salesforce.einsteinForDevelopers.enableAutocompletionsByFileType": {
+    "apex": true,
+    "javascript": true,
+    "css": true,
+    "html": true
+  },
+  "salesforce.einsteinForDevelopers.enable": true
 }
